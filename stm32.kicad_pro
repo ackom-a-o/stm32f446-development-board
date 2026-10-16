@@ -252,7 +252,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "Prototype"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -272,36 +272,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "footprint_filter|2844800|1028700|f25d879f-b2bd-4e4e-9a45-f7304243024f|00000000-0000-0000-0000-000000000000|||",
-        "MF-MSMF050-2 uses an 1812 package; assigned footprint reviewed."
-      ],
-      [
-        "footprint_filter|3048000|774700|86c9f301-5584-4e63-be92-47992cbfc21a|00000000-0000-0000-0000-000000000000|||",
-        "Custom footprint follows ST datasheet land pattern; pad 1 cathode, pad 2 anode."
-      ],
-      [
-        "four_way_junction|1549400|952500|b7ec669a-9697-43e5-8b63-a8ba3751b3b5|484da674-4db0-430b-a488-1ac50bfc8f3e|/20b47cb4-a94d-429e-be74-f8ca0a6c312b||",
-        "Intentional junction; connections reviewed"
-      ],
-      [
-        "four_way_junction|1549400|952500|b7ec669a-9697-43e5-8b63-a8ba3751b3b5|e54f447d-2867-4c1a-8ef8-1ba7467e8604|/20b47cb4-a94d-429e-be74-f8ca0a6c312b||",
-        "Intentional Wire: connections reviewed "
-      ],
-      [
-        "four_way_junction|2794000|901700|87bade87-05b4-4072-9d8f-140cdbf676a7|e796f19c-c8ac-47fb-8a93-d5a6c27e6cb3|/20b47cb4-a94d-429e-be74-f8ca0a6c312b||",
-        "Intentional junction; connections reviewed"
-      ],
-      [
-        "four_way_junction|2794000|901700|cac9fd6a-9519-41c5-aaa6-6cbefdbd53cc|87bade87-05b4-4072-9d8f-140cdbf676a7|/20b47cb4-a94d-429e-be74-f8ca0a6c312b||",
-        "Intentional wirirng "
-      ],
-      [
-        "four_way_junction|2794000|901700|cac9fd6a-9519-41c5-aaa6-6cbefdbd53cc|b88befac-7ff7-4609-b19d-ee31d054ef47|/20b47cb4-a94d-429e-be74-f8ca0a6c312b||",
-        "Intentional USB D− junction: A7 and B7 joined to the same protected data net."
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -581,7 +552,7 @@
     "netclass_patterns": [
       {
         "netclass": "USB",
-        "pattern": "/USB_D_*"
+        "pattern": "USB_D_*"
       }
     ]
   },
@@ -733,6 +704,18 @@
     [
       "20b47cb4-a94d-429e-be74-f8ca0a6c312b",
       "Root"
+    ],
+    [
+      "fd628a48-7c61-45e3-8b3a-eaefab827e11",
+      "USB, debug, reset and clock"
+    ],
+    [
+      "fd628a48-7c61-45e3-8b3a-eaefab827e12",
+      "MCU ports and peripheral interfaces"
+    ],
+    [
+      "fd628a48-7c61-45e3-8b3a-eaefab827e13",
+      "GPIO expansion"
     ]
   ],
   "text_variables": {},

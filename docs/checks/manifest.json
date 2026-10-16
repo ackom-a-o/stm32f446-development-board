@@ -3,33 +3,63 @@
   "kicad_version": "10.0.6",
   "source_files": {
     "stm32.kicad_pcb": {
-      "sha256": "5cc806b02bc3182b0876a0b703921d13f776e1cc2b26adcc4a0b45b761941fc9",
-      "sha256_lf_normalized": "5cc806b02bc3182b0876a0b703921d13f776e1cc2b26adcc4a0b45b761941fc9"
+      "sha256": "0a22175ec0964709dad9a2a1456cd7b7d57fe08a1c1af6545e939554702176a4",
+      "sha256_lf_normalized": "884f4cd2263403d3afd1d1c66bde4520508e4f7c83970602e4f1c2cce26f4dbf"
     },
     "stm32.kicad_sch": {
-      "sha256": "12dd2cccd399e7690c4c241903aae1eacaaa34aefc46a21dfbeaa3411bf48dde",
-      "sha256_lf_normalized": "12dd2cccd399e7690c4c241903aae1eacaaa34aefc46a21dfbeaa3411bf48dde"
+      "sha256": "361a9a0c3d5bf9dd6a4c285fcd696e26cebdd9820adeadb146c64f460fff538f",
+      "sha256_lf_normalized": "b96e599c48219e51bb6d874a2dc518ad8f4d684576814ef4752d972cc6b2fe16"
+    },
+    "usb_debug_clock.kicad_sch": {
+      "sha256": "ae9ac75bbc45895f49e38270769938752ab7749383b1d0aeda08dcfa9c0828f2",
+      "sha256_lf_normalized": "4a5112c6f36247baba72d6c6bc2800175f269ef23bdf31fef4b7c98b3627f7d0"
+    },
+    "mcu_interfaces.kicad_sch": {
+      "sha256": "c3dfcd8a2109d620ee7b49feb4a2ce7bc6b1736982e8e371e522d34808c26a48",
+      "sha256_lf_normalized": "3a05ec66954add6eab6c0933bdbd43b10800439f7d607e26810f928cec2385f5"
+    },
+    "gpio_expansion.kicad_sch": {
+      "sha256": "f30ef76e7bc32f3e7dc321d0ca2ee44bf786b70fc399f83c562d2662b5050108",
+      "sha256_lf_normalized": "b466cfbc5bda5171c401ef6e3a3405d5e3871325066964517a40dfea92648e74"
     },
     "stm32.kicad_pro": {
-      "sha256": "b0e1840f045167744d14fb254403b49d75a36b48d6d8ca8e7ab8315d27d4dd88",
-      "sha256_lf_normalized": "b0e1840f045167744d14fb254403b49d75a36b48d6d8ca8e7ab8315d27d4dd88"
+      "sha256": "1dedf11f3021b441ac3adeab921eb37ce9308c9e1a7738c246932fe14fd48ca0",
+      "sha256_lf_normalized": "1dedf11f3021b441ac3adeab921eb37ce9308c9e1a7738c246932fe14fd48ca0"
     },
     "stm32.kicad_dru": {
       "sha256": "7661dea0d9532497489bf89fce041468d03dcae2888bf4ebd15342b8784f876e",
       "sha256_lf_normalized": "024cbfc2ede623bd6b63787e9f4c9df4934ea9cd495f88d7996fcf63d81ac710"
+    },
+    "STM32_MCU.kicad_sym": {
+      "sha256": "ca41fc5355bf9a0884302a8dcfc72119b504700b4077b59651a411281fc6397c",
+      "sha256_lf_normalized": "a6f90879f7b8efaa8a48534914f3206be2fa883d35ede381f6c63d4a66231f8d"
+    },
+    "STM32_Power.kicad_sym": {
+      "sha256": "b74e1fc3656d1129950fa6c5df526a789cc9cb6a573eabbd03c265b1bf694f15",
+      "sha256_lf_normalized": "dfa0e1bae6b8c79ea6b1ffc79830b670e5a4333d9e1979ed3817afae1eabb5bf"
+    },
+    "sym-lib-table": {
+      "sha256": "fe73a124b2222c8d8be182abef58acf8d16329ecce73c8632817750836838154",
+      "sha256_lf_normalized": "7eb99adac45eb4c92075014c9d51de6ee1f803bbd8c02a0d362316e30f5d4621"
+    },
+    "fp-lib-table": {
+      "sha256": "26e342f1c13ce73bca27fffa23bb6765ddd867d4ca187de5ba76780f9a774fa9",
+      "sha256_lf_normalized": "2c03f9d9bf85e5d4e15cafc184aabac80c3f9c016c6d3111bf2d241c524e03bf"
     }
   },
   "checks": {
-    "drc_violations": 0,
+    "ERC_issues": 0,
+    "DRC_violations": 0,
     "unconnected_items": 0,
     "schematic_parity": 0,
-    "active_erc_issues": 0,
-    "historical_erc_exclusions": 7
+    "ignored_checks": 0,
+    "current_ERC_exclusions": 0
   },
   "reports": {
-    "DRC.json": "2026-10-16T10:29:28",
-    "ERC.json": "2026-10-16T10:29:28",
-    "ERC-exclusions.json": "2026-10-15T15:55:48"
+    "DRC.json": "2026-10-16T20:57:10",
+    "ERC.json": "2026-10-16T20:57:09",
+    "ERC-exclusions.json": "Historical report from 2026-10-15; no current exclusions",
+    "schematic-refactor.json": "2026-10-16"
   },
-  "limits": "Software checks and earlier exclusion review only; hardware untested; exact fabrication stackup and final assembly approval pending."
+  "limits": "No physical layout improvement or hardware validation is claimed. Stackup confirmation and final assembly production-file approval remain pending."
 }

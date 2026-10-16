@@ -1,17 +1,33 @@
 {
     "$schema": "https://schemas.kicad.org/erc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-10-16T10:29:28",
+    "date": "2026-10-16T20:57:09",
     "ignored_checks": [],
     "included_severities": [
         "error",
-        "warning"
+        "warning",
+        "exclusion"
     ],
     "kicad_version": "10.0.6",
     "sheets": [
         {
             "path": "/",
             "uuid_path": "/20b47cb4-a94d-429e-be74-f8ca0a6c312b",
+            "violations": []
+        },
+        {
+            "path": "/USB, debug, reset and clock/",
+            "uuid_path": "/20b47cb4-a94d-429e-be74-f8ca0a6c312b/fd628a48-7c61-45e3-8b3a-eaefab827e11",
+            "violations": []
+        },
+        {
+            "path": "/MCU ports and peripheral interfaces/",
+            "uuid_path": "/20b47cb4-a94d-429e-be74-f8ca0a6c312b/fd628a48-7c61-45e3-8b3a-eaefab827e12",
+            "violations": []
+        },
+        {
+            "path": "/GPIO expansion/",
+            "uuid_path": "/20b47cb4-a94d-429e-be74-f8ca0a6c312b/fd628a48-7c61-45e3-8b3a-eaefab827e13",
             "violations": []
         }
     ],

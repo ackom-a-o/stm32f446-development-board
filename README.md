@@ -54,7 +54,7 @@ Peer feedback and AI-assisted checks supported these iterations. Bench measureme
 
 ## Evidence and next milestone
 
-Recorded checks on **16 October 2026** report **0 active ERC issues, 0 DRC violations, 0 unconnected items and 0 schematic parity issues**. Seven previously reviewed ERC exclusions remain. [Validation evidence](docs/validation.md) links the reports and records known layout limits; these checks do not establish measured hardware performance.
+Recorded checks on **16 October 2026** report **0 ERC issues, 0 DRC violations, 0 unconnected items and 0 schematic parity issues**, with no ignored checks or current exclusions. [Validation evidence](docs/validation.md) links the reports and records known layout limits; these checks do not establish measured hardware performance.
 
 Next: confirm the exact **JLC04161H-7628** stackup, approve final assembly placement and bring up the prototype. Power rails and current draw come first, followed by SWD/reset, clock startup, GPIO and USB. Every physical test in the [test log](docs/test-log.md) is currently marked **not tested**. Firmware will be added when implementation begins.
 
@@ -62,11 +62,20 @@ Next: confirm the exact **JLC04161H-7628** stackup, approve final assembly place
 
 Open [`stm32.kicad_pro`](stm32.kicad_pro) in **KiCad 10**, with its standard libraries installed.
 
+The [four-sheet schematic](docs/schematic.pdf) separates power, USB/debug/clock, peripheral interfaces and expansion. The MCU uses eight symbol units so that supply pins and GPIO ports can be reviewed separately. Named signals connect sheets; pin numbers retain their physical package mapping.
+
+![MCU ports and peripheral interface schematic](docs/images/schematic-interfaces.png)
+
+*Sheet 3 of 4. The readability refactor preserved all 68 components and the pin membership of all 135 nets; [comparison evidence](docs/checks/schematic-refactor.json) also records unchanged PCB geometry.*
+
 | Files | Purpose |
 |---|---|
-| `stm32.kicad_sch`, `stm32.kicad_pcb` | Editable schematic and routed PCB |
+| `stm32.kicad_sch` | Root sheet: power path and MCU supplies |
+| `usb_debug_clock.kicad_sch` | USB, clock, reset, boot and SWD |
+| `mcu_interfaces.kicad_sch`, `gpio_expansion.kicad_sch` | MCU ports, peripheral headers and expansion |
+| `stm32.kicad_pcb` | Routed four-layer PCB |
 | `stm32.kicad_dru` | Project design rules |
-| `STM32_Custom.pretty`, `STM32_Power.kicad_sym` | Local footprints and symbols |
+| `STM32_Custom.pretty`, `STM32_Power.kicad_sym`, `STM32_MCU.kicad_sym` | Local footprints, power symbols and split MCU symbol |
 | `fp-lib-table`, `sym-lib-table` | Project-relative library configuration |
 | `docs/` | Schematic export, design decisions, part inventory and validation evidence |
 

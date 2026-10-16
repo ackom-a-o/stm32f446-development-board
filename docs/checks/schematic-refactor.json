@@ -1,0 +1,40 @@
+{
+  "recorded_date": "2026-10-16",
+  "scope": "Schematic readability refactor; electrical topology and physical PCB geometry preserved.",
+  "comparison_baseline_git_commit": "a38fc19",
+  "schematic_sheets": 4,
+  "MCU_symbol_units": 8,
+  "physical_references": 68,
+  "electrical_nets": 135,
+  "MCU_pins": 144,
+  "preserved_component_fields": [
+    "Reference",
+    "Value",
+    "Footprint",
+    "Datasheet",
+    "Description",
+    "Manufacturer",
+    "Manufacturer Part Number",
+    "LCSC Part Number",
+    "Sourcing Status",
+    "original physical-component UUID"
+  ],
+  "MCU_pin_numbers_names_electrical_types_and_graphic_types_identical": true,
+  "before_connectivity_sha256": "2df26a21cfd7b9dfca7d27c44eeef001a7821dea0caf45cba821102e9343549a",
+  "after_connectivity_sha256": "2df26a21cfd7b9dfca7d27c44eeef001a7821dea0caf45cba821102e9343549a",
+  "connectivity_digest_method": "Sort reference/pin pairs within each net, then sort nets; JSON compact UTF-8; net names excluded.",
+  "before_PCB_geometry_sha256": "3216d5c98a9c921de55b7c51be56bcd15ba94d6988279b86d927108656539681",
+  "after_PCB_geometry_sha256": "3216d5c98a9c921de55b7c51be56bcd15ba94d6988279b86d927108656539681",
+  "PCB_comparison_method": "Exact parsed S-expression equality after replacing only net labels, schematic paths/sheet names/files and symbol-unit metadata with markers. Pad-to-net membership and unit pin membership also compared separately.",
+  "PCB_pad_net_membership_identical": true,
+  "checks": {
+    "ERC_issues": 0,
+    "DRC_violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0,
+    "ignored_checks": 0,
+    "current_ERC_exclusions": 0
+  },
+  "removed_historical_ERC_exclusions": 7,
+  "limits": "No physical layout improvement or hardware validation is claimed. Stackup confirmation and final assembly production-file approval remain pending."
+}

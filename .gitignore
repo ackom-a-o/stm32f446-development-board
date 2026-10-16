@@ -4,6 +4,10 @@
 !/README.md
 !/stm32.kicad_pro
 !/stm32.kicad_sch
+!/usb_debug_clock.kicad_sch
+!/mcu_interfaces.kicad_sch
+!/gpio_expansion.kicad_sch
+!/STM32_MCU.kicad_sym
 !/stm32.kicad_pcb
 !/stm32.kicad_dru
 !/fp-lib-table
@@ -29,6 +33,7 @@
 !/docs/images/
 /docs/images/*
 !/docs/images/pcb-top.png
+!/docs/images/schematic-interfaces.png
 !/docs/images/reset-layout-before-after.png
 !/docs/checks/
 /docs/checks/*
@@ -36,6 +41,7 @@
 !/docs/checks/ERC.json
 !/docs/checks/ERC-exclusions.json
 !/docs/checks/manifest.json
+!/docs/checks/schematic-refactor.json
 
 # KiCad personal state and recovery files.
 *.kicad_prl

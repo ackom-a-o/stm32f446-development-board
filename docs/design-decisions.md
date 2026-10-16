@@ -46,6 +46,14 @@ The correction was moved into uploaded placement data: seven headers and U1/U2/U
 
 The lesson was to validate saved manufacturing data after reopening, not just the current preview. KiCad footprint orientations were not changed to compensate for the supplier convention. Final assembler production-file approval remains a separate step.
 
+## Schematic readability without changing the circuit
+
+The original single-sheet schematic was reorganized into four functional sheets. The MCU symbol is split into supplies/control and ports A–G, while retaining the original package pin numbers and electrical pin types. Shared capacitor rails and connected divider, crystal and LED circuits make the signal flow easier to follow. Named signals carry connections between sheets.
+
+Presentation changes were verified against the preceding design: all 68 physical components retain their values, footprints, sourcing fields and original component UUIDs. All 135 nets contain the same reference-and-pin pairs. PCB synchronization changes only net names, schematic links and symbol-unit metadata; a structural comparison confirms identical physical geometry. Fresh ERC and DRC/parity checks pass with no issues, ignored checks or exclusions. The [comparison record](checks/schematic-refactor.json) records the scope of those checks.
+
+This improves reviewability; it does not add hardware test evidence or close the remaining fabrication and bring-up questions.
+
 ## Closing the remaining questions
 
 1. Confirm the exact stackup and final production placement files.

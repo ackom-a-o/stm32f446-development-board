@@ -1,1 +1,1 @@
-(sym_lib_table (version 7) (lib (name "STM32_Power") (type "KiCad") (uri "${KIPRJMOD}/STM32_Power.kicad_sym") (options "") (descr "Robot power regulator")))
+(sym_lib_table (version 7) (lib (name "STM32_Power") (type "KiCad") (uri "${KIPRJMOD}/STM32_Power.kicad_sym") (options "") (descr "Robot power regulator")) (lib (name "STM32_MCU") (type "KiCad") (uri "${KIPRJMOD}/STM32_MCU.kicad_sym") (options "") (descr "Split STM32F446 MCU symbol")))

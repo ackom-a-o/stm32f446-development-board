@@ -4,13 +4,15 @@ This page separates design evidence from physical test results. Last updated: 16
 
 ## Check evidence
 
-The [manifest](checks/manifest.json) identifies source hashes and report counts. The [DRC report](checks/DRC.json) and [ERC report](checks/ERC.json) are recorded KiCad outputs. The earlier [exclusions report](checks/ERC-exclusions.json) records five four-way-junction notices and two footprint-filter notices. Two junction entries contain no item reference in the exported report; comments alone are not independent proof. Recheck the project exclusions before manufacturing release.
+The [manifest](checks/manifest.json) identifies source hashes and report counts. The [DRC report](checks/DRC.json) and [ERC report](checks/ERC.json) are recorded KiCad outputs with all rule severities included: zero issues, zero ignored checks and zero current exclusions.
 
-Active ERC/DRC checks were run after sourcing metadata synchronization. The manifest includes byte hashes and hashes normalized to LF so that Git line-ending conversion can be distinguished from an electrical-design change.
+The four-sheet readability refactor was checked against the preceding schematic: all 68 physical references, values, sourcing fields, footprints and original component UUIDs were preserved. All 135 nets retain identical reference-and-pin membership, and the split MCU retains the same 144 pin definitions and electrical types. A structural PCB comparison permits only net names, schematic paths and symbol-unit metadata to differ; all geometry remains identical. See the [comparison record](checks/schematic-refactor.json).
+
+The earlier [exclusions report](checks/ERC-exclusions.json) is retained as history. Its seven entries describe the previous schematic. After redrawing, those entries were removed and ERC was rerun with no exclusions; none of those notices recur. The manifest includes byte hashes and hashes normalized to LF to distinguish Git line-ending conversion from design changes.
 
 | Area | Available evidence | Still required |
 |---|---|---|
-| Schematic and PCB consistency | Recorded ERC, DRC and parity checks have zero active issues; seven ERC exclusions were previously reviewed | Recheck after future design changes; review exclusions before release |
+| Schematic and PCB consistency | ERC, DRC and parity checks have zero issues, ignored checks or current exclusions; before/after connectivity and PCB geometry comparison passed | Recheck after future design changes |
 | Component identity | Manufacturer sourcing fields synchronized with approved assembly substitutions | Confirm final purchased parts and assembly production files |
 | Placement data | 65 intended parts selected; seven headers and U1/U2/U4 corrections checked after upload and fresh reload | Final assembler production placement approval |
 | PCB stackup | KiCad models the intended JLC04161H-7628 construction | Quote has no specific stackup requirement; obtain exact fabricator confirmation before ordering |
