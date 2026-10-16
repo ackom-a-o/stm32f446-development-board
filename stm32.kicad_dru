@@ -1,0 +1,11 @@
+(version 1)
+# GCT land-pattern tolerance adjustment gives ~0.244 mm nominal clearance.
+# JLCPCB published NPTH-to-track minimum is 0.20 mm; global rule remains 0.25 mm.
+(rule "USB4105 internal NPTH clearance"
+ (condition "A.Reference == 'J2' && B.Reference == 'J2'")
+ (constraint hole_clearance (min 0.20mm)))
+
+# Preserve nominal non-coplanar USB geometry beside U3 thermal pour.
+(rule "U3 ground pour to USB"
+ (condition "A.Type == 'Zone' && A.Name == 'U3_GND_HEAT' && (B.NetName == '/USB_D_P' || B.NetName == '/USB_D_N')")
+ (constraint clearance (min 0.70mm)))

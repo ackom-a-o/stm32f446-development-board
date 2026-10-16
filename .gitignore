@@ -1,0 +1,34 @@
+# Explicit initial publication list: experiments, quotes and backups stay local.
+/*
+!/.gitignore
+!/README.md
+!/stm32.kicad_pro
+!/stm32.kicad_sch
+!/stm32.kicad_pcb
+!/stm32.kicad_dru
+!/fp-lib-table
+!/sym-lib-table
+!/STM32_Power.kicad_sym
+!/STM32_Custom.pretty/
+/STM32_Custom.pretty/*
+!/STM32_Custom.pretty/ESDA7P60-1U1M.kicad_mod
+!/STM32_Custom.pretty/TPS22918_DBV0006A.kicad_mod
+!/STM32_Custom.pretty/TPS7A25_DRV0006A.kicad_mod
+!/STM32_Custom.pretty/USB_C_Receptacle_USB4105_JLC.kicad_mod
+!/Library.pretty/
+/Library.pretty/*
+!/Library.pretty/*.kicad_mod
+!/Library.pretty/.gitkeep
+!/docs/
+/docs/*
+!/docs/validation.md
+!/docs/test-log.md
+
+# KiCad personal state and recovery files.
+*.kicad_prl
+*.bak
+*.lck
+~*
+*.tmp
+.DS_Store
+Thumbs.db
