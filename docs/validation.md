@@ -2,6 +2,12 @@
 
 This page separates design evidence from physical test results. Last updated: 16 October 2026.
 
+## Check evidence
+
+The [manifest](checks/manifest.json) identifies source hashes and report counts. The [DRC report](checks/DRC.json) and [ERC report](checks/ERC.json) are recorded KiCad outputs. The earlier [exclusions report](checks/ERC-exclusions.json) records five four-way-junction notices and two footprint-filter notices. Two junction entries contain no item reference in the exported report; comments alone are not independent proof. Recheck the project exclusions before manufacturing release.
+
+Active ERC/DRC checks were run after sourcing metadata synchronization. The manifest includes byte hashes and hashes normalized to LF so that Git line-ending conversion can be distinguished from an electrical-design change.
+
 | Area | Available evidence | Still required |
 |---|---|---|
 | Schematic and PCB consistency | Recorded ERC, DRC and parity checks have zero active issues; seven ERC exclusions were previously reviewed | Recheck after future design changes; review exclusions before release |

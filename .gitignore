@@ -23,6 +23,19 @@
 /docs/*
 !/docs/validation.md
 !/docs/test-log.md
+!/docs/design-decisions.md
+!/docs/schematic.pdf
+!/docs/components.json
+!/docs/images/
+/docs/images/*
+!/docs/images/pcb-top.png
+!/docs/images/reset-layout-before-after.png
+!/docs/checks/
+/docs/checks/*
+!/docs/checks/DRC.json
+!/docs/checks/ERC.json
+!/docs/checks/ERC-exclusions.json
+!/docs/checks/manifest.json
 
 # KiCad personal state and recovery files.
 *.kicad_prl

@@ -1,0 +1,122 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-15T15:55:48",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/20b47cb4-a94d-429e-be74-f8ca0a6c312b",
+            "violations": [
+                {
+                    "comment": "Intentional junction; connections reviewed",
+                    "description": "Four connection points are joined together",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol C20 Pin 1 [Passive, Line]",
+                            "pos": {
+                                "x": 1.3716,
+                                "y": 0.9144
+                            },
+                            "uuid": "b7ec669a-9697-43e5-8b63-a8ba3751b3b5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "four_way_junction"
+                },
+                {
+                    "comment": "Intentional Wire: connections reviewed ",
+                    "description": "Four connection points are joined together",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol C20 Pin 1 [Passive, Line]",
+                            "pos": {
+                                "x": 1.3716,
+                                "y": 0.9144
+                            },
+                            "uuid": "b7ec669a-9697-43e5-8b63-a8ba3751b3b5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "four_way_junction"
+                },
+                {
+                    "comment": "Intentional junction; connections reviewed",
+                    "description": "Four connection points are joined together",
+                    "excluded": true,
+                    "items": [],
+                    "severity": "warning",
+                    "type": "four_way_junction"
+                },
+                {
+                    "comment": "Intentional wirirng ",
+                    "description": "Four connection points are joined together",
+                    "excluded": true,
+                    "items": [],
+                    "severity": "warning",
+                    "type": "four_way_junction"
+                },
+                {
+                    "comment": "Intentional USB D− junction: A7 and B7 joined to the same protected data net.",
+                    "description": "Four connection points are joined together",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Horizontal Wire, length 0.0127 mm",
+                            "pos": {
+                                "x": 2.6035,
+                                "y": 0.8636
+                            },
+                            "uuid": "b88befac-7ff7-4609-b19d-ee31d054ef47"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "four_way_junction"
+                },
+                {
+                    "comment": "MF-MSMF050-2 uses an 1812 package; assigned footprint reviewed.",
+                    "description": "Assigned footprint doesn't match footprint filters",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol F1 [MF_MSMF050_2]",
+                            "pos": {
+                                "x": 2.667,
+                                "y": 0.9906
+                            },
+                            "uuid": "f25d879f-b2bd-4e4e-9a45-f7304243024f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "comment": "Custom footprint follows ST datasheet land pattern; pad 1 cathode, pad 2 anode.",
+                    "description": "Assigned footprint doesn't match footprint filters",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol D4 [ESDA7P120_1U1M]",
+                            "pos": {
+                                "x": 2.8702,
+                                "y": 0.7366
+                            },
+                            "uuid": "86c9f301-5584-4e63-be92-47992cbfc21a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                }
+            ]
+        }
+    ],
+    "source": "stm32.kicad_sch"
+}

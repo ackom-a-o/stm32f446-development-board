@@ -1,0 +1,392 @@
+[
+  {
+    "Reference": "C8",
+    "MPN": "CC0805KRX7R9BB104",
+    "LCSC": "C49678",
+    "Manufacturer": "Yageo"
+  },
+  {
+    "Reference": "F1",
+    "MPN": "MF-MSMF050-2",
+    "LCSC": "C17313",
+    "Manufacturer": "Bourns"
+  },
+  {
+    "Reference": "U3",
+    "MPN": "TPS7A2533DRVR",
+    "LCSC": "C2867820",
+    "Manufacturer": "Texas Instruments"
+  },
+  {
+    "Reference": "C5",
+    "MPN": "CC0805KRX7R9BB104",
+    "LCSC": "C49678",
+    "Manufacturer": "Yageo"
+  },
+  {
+    "Reference": "SW2",
+    "MPN": "B3F-1000",
+    "LCSC": "C93157",
+    "Manufacturer": "Omron Electronics"
+  },
+  {
+    "Reference": "J8",
+    "MPN": "PZ254V-12-20P",
+    "LCSC": "C492427",
+    "Manufacturer": "XFCN"
+  },
+  {
+    "Reference": "R9",
+    "MPN": "0805W8F1002T5E",
+    "LCSC": "C17414",
+    "Manufacturer": "UNI-ROYAL"
+  },
+  {
+    "Reference": "R11",
+    "MPN": "0805W8F4701T5E",
+    "LCSC": "C17673",
+    "Manufacturer": "UNI-ROYAL"
+  },
+  {
+    "Reference": "C7",
+    "MPN": "CC0805KRX7R9BB104",
+    "LCSC": "C49678",
+    "Manufacturer": "Yageo"
+  },
+  {
+    "Reference": "R6",
+    "MPN": "0805W8F1001T5E",
+    "LCSC": "C17513",
+    "Manufacturer": "UNI-ROYAL"
+  },
+  {
+    "Reference": "C9",
+    "MPN": "CC0805KRX7R9BB104",
+    "LCSC": "C49678",
+    "Manufacturer": "Yageo"
+  },
+  {
+    "Reference": "SW1",
+    "MPN": "B3F-1000",
+    "LCSC": "C93157",
+    "Manufacturer": "Omron Electronics"
+  },
+  {
+    "Reference": "C3",
+    "MPN": "CC0805KRX7R9BB104",
+    "LCSC": "C49678",
+    "Manufacturer": "Yageo"
+  },
+  {
+    "Reference": "C25",
+    "MPN": "CL21B225KAFVPJE",
+    "LCSC": "C16195008",
+    "Manufacturer": "Samsung Electro-Mechanics"
+  },
+  {
+    "Reference": "R13",
+    "MPN": "0805W8F1002T5E",
+    "LCSC": "C17414",
+    "Manufacturer": "UNI-ROYAL"
+  },
+  {
+    "Reference": "U4",
+    "MPN": "TPS22918DBVR",
+    "LCSC": "C131941",
+    "Manufacturer": "Texas Instruments"
+  },
+  {
+    "Reference": "C11",
+    "MPN": "CC0805KRX7R9BB104",
+    "LCSC": "C49678",
+    "Manufacturer": "Yageo"
+  },
+  {
+    "Reference": "R12",
+    "MPN": "0805W8F1002T5E",
+    "LCSC": "C17414",
+    "Manufacturer": "UNI-ROYAL"
+  },
+  {
+    "Reference": "C17",
+    "MPN": "CC0805KRX7R9BB104",
+    "LCSC": "C49678",
+    "Manufacturer": "Yageo"
+  },
+  {
+    "Reference": "C27",
+    "MPN": "CC0805KRX7R9BB104",
+    "LCSC": "C49678",
+    "Manufacturer": "Yageo"
+  },
+  {
+    "Reference": "U1",
+    "MPN": "STM32F446ZET6",
+    "LCSC": "C1337227",
+    "Manufacturer": "STMicroelectronics"
+  },
+  {
+    "Reference": "C6",
+    "MPN": "CC0805KRX7R9BB104",
+    "LCSC": "C49678",
+    "Manufacturer": "Yageo"
+  },
+  {
+    "Reference": "SW3",
+    "MPN": "B3F-1000",
+    "LCSC": "C93157",
+    "Manufacturer": "Omron Electronics"
+  },
+  {
+    "Reference": "C2",
+    "MPN": "CL21B225KAFVPJE",
+    "LCSC": "C16195008",
+    "Manufacturer": "Samsung Electro-Mechanics"
+  },
+  {
+    "Reference": "R2",
+    "MPN": "0805W8F5101T5E",
+    "LCSC": "C27834",
+    "Manufacturer": "UNI-ROYAL"
+  },
+  {
+    "Reference": "J5",
+    "MPN": "CS-1109-1X3(L11.5)PA6T",
+    "LCSC": "C18213718",
+    "Manufacturer": "CST"
+  },
+  {
+    "Reference": "C18",
+    "MPN": "CL21B105KBFNNNE",
+    "LCSC": "C28323",
+    "Manufacturer": "Samsung Electro-Mechanics"
+  },
+  {
+    "Reference": "C1",
+    "MPN": "CL21B225KAFVPJE",
+    "LCSC": "C16195008",
+    "Manufacturer": "Samsung Electro-Mechanics"
+  },
+  {
+    "Reference": "C28",
+    "MPN": "CC0805KRX7R9BB472",
+    "LCSC": "C107153",
+    "Manufacturer": "Yageo"
+  },
+  {
+    "Reference": "U2",
+    "MPN": "USBLC6-2SC6",
+    "LCSC": "C7519",
+    "Manufacturer": "STMicroelectronics"
+  },
+  {
+    "Reference": "C13",
+    "MPN": "CC0805KRX7R9BB104",
+    "LCSC": "C49678",
+    "Manufacturer": "Yageo"
+  },
+  {
+    "Reference": "D1",
+    "MPN": "KT-0805G",
+    "LCSC": "C2297",
+    "Manufacturer": "Hubei KENTO Elec"
+  },
+  {
+    "Reference": "C20",
+    "MPN": "CL21B105KBFNNNE",
+    "LCSC": "C28323",
+    "Manufacturer": "Samsung Electro-Mechanics"
+  },
+  {
+    "Reference": "R1",
+    "MPN": "0805W8F1002T5E",
+    "LCSC": "C17414",
+    "Manufacturer": "UNI-ROYAL"
+  },
+  {
+    "Reference": "J7",
+    "MPN": "PZ254V-11-10P",
+    "LCSC": "C492409",
+    "Manufacturer": "XFCN"
+  },
+  {
+    "Reference": "R8",
+    "MPN": "0805W8F1001T5E",
+    "LCSC": "C17513",
+    "Manufacturer": "UNI-ROYAL"
+  },
+  {
+    "Reference": "J3",
+    "MPN": "PZ254V-11-04P",
+    "LCSC": "C492403",
+    "Manufacturer": "XFCN"
+  },
+  {
+    "Reference": "R5",
+    "MPN": "0805W8F8202T5E",
+    "LCSC": "C17840",
+    "Manufacturer": "UNI-ROYAL"
+  },
+  {
+    "Reference": "C19",
+    "MPN": "CC0805KRX7R9BB104",
+    "LCSC": "C49678",
+    "Manufacturer": "Yageo"
+  },
+  {
+    "Reference": "R10",
+    "MPN": "0805W8F4701T5E",
+    "LCSC": "C17673",
+    "Manufacturer": "UNI-ROYAL"
+  },
+  {
+    "Reference": "D2",
+    "MPN": "KT-0805R",
+    "LCSC": "C2295",
+    "Manufacturer": "Hubei KENTO Elec"
+  },
+  {
+    "Reference": "D5",
+    "MPN": "SS14",
+    "LCSC": "C2480",
+    "Manufacturer": "MDD(Microdiode Semiconductor)"
+  },
+  {
+    "Reference": "C4",
+    "MPN": "CC0805KRX7R9BB104",
+    "LCSC": "C49678",
+    "Manufacturer": "Yageo"
+  },
+  {
+    "Reference": "C12",
+    "MPN": "CC0805KRX7R9BB104",
+    "LCSC": "C49678",
+    "Manufacturer": "Yageo"
+  },
+  {
+    "Reference": "J4",
+    "MPN": "CS-1109-1*6(L11.5)",
+    "LCSC": "C5142852",
+    "Manufacturer": "CST"
+  },
+  {
+    "Reference": "C26",
+    "MPN": "CL21B225KAFVPJE",
+    "LCSC": "C16195008",
+    "Manufacturer": "Samsung Electro-Mechanics"
+  },
+  {
+    "Reference": "C24",
+    "MPN": "CL21C220JBANNNC",
+    "LCSC": "C1804",
+    "Manufacturer": "Samsung Electro-Mechanics"
+  },
+  {
+    "Reference": "C23",
+    "MPN": "CL21C220JBANNNC",
+    "LCSC": "C1804",
+    "Manufacturer": "Samsung Electro-Mechanics"
+  },
+  {
+    "Reference": "C10",
+    "MPN": "CC0805KRX7R9BB104",
+    "LCSC": "C49678",
+    "Manufacturer": "Yageo"
+  },
+  {
+    "Reference": "R4",
+    "MPN": "0805W8F3302T5E",
+    "LCSC": "C17633",
+    "Manufacturer": "UNI-ROYAL"
+  },
+  {
+    "Reference": "J6",
+    "MPN": "PZ254V-11-04P",
+    "LCSC": "C492403",
+    "Manufacturer": "XFCN"
+  },
+  {
+    "Reference": "J1",
+    "MPN": "CS-1109-1x5 (11.6)",
+    "LCSC": "C5142872",
+    "Manufacturer": "CST"
+  },
+  {
+    "Reference": "C14",
+    "MPN": "CL21A475KAQNNNE",
+    "LCSC": "C1779",
+    "Manufacturer": "Samsung Electro-Mechanics"
+  },
+  {
+    "Reference": "D4",
+    "MPN": "ESDA7P120-1U1M",
+    "LCSC": "C2969802",
+    "Manufacturer": "STMicroelectronics"
+  },
+  {
+    "Reference": "J2",
+    "MPN": "USB4105-GF-A-120",
+    "LCSC": "C5184243",
+    "Manufacturer": "Global Connector Technology"
+  },
+  {
+    "Reference": "C21",
+    "MPN": "CC0805KRX7R9BB104",
+    "LCSC": "C49678",
+    "Manufacturer": "Yageo"
+  },
+  {
+    "Reference": "C22",
+    "MPN": "CC0805KRX7R9BB104",
+    "LCSC": "C49678",
+    "Manufacturer": "Yageo"
+  },
+  {
+    "Reference": "D3",
+    "MPN": "KT-0805R",
+    "LCSC": "C2295",
+    "Manufacturer": "Hubei KENTO Elec"
+  },
+  {
+    "Reference": "R15",
+    "MPN": "0805W8F1002T5E",
+    "LCSC": "C17414",
+    "Manufacturer": "UNI-ROYAL"
+  },
+  {
+    "Reference": "R3",
+    "MPN": "0805W8F5101T5E",
+    "LCSC": "C27834",
+    "Manufacturer": "UNI-ROYAL"
+  },
+  {
+    "Reference": "R7",
+    "MPN": "0805W8F1001T5E",
+    "LCSC": "C17513",
+    "Manufacturer": "UNI-ROYAL"
+  },
+  {
+    "Reference": "C15",
+    "MPN": "CC0805KRX7R9BB104",
+    "LCSC": "C49678",
+    "Manufacturer": "Yageo"
+  },
+  {
+    "Reference": "Y1",
+    "MPN": "ECS-80-18-30-JGN-TR",
+    "LCSC": "C2450458",
+    "Manufacturer": "ECS Inc."
+  },
+  {
+    "Reference": "R14",
+    "MPN": "0805W8F1002T5E",
+    "LCSC": "C17414",
+    "Manufacturer": "UNI-ROYAL"
+  },
+  {
+    "Reference": "C16",
+    "MPN": "CL21B105KBFNNNE",
+    "LCSC": "C28323",
+    "Manufacturer": "Samsung Electro-Mechanics"
+  }
+]

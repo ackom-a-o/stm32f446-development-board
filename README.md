@@ -1,65 +1,73 @@
 # STM32F446 Development Board
 
-A custom STM32F446ZET6 development board designed in KiCad. This repository documents the hardware, design decisions, manufacturing review and eventual firmware and bench testing.
+A custom, USB-powered development board for sensor and control experiments, built around the **STM32F446ZET6**. This project follows an embedded hardware design from component selection and PCB layout through assembly preparation, firmware and bench validation.
 
-**Status: prototype — hardware validation pending.** The design has been prepared for a fabrication and assembly quote. No working-hardware result is claimed. The exact fabrication stackup and final assembler production files still need confirmation before ordering.
+**Current milestone: first prototype preparation.** Hardware is not yet bench-tested. Exact fabrication stackup confirmation and final assembly production-file review remain open.
 
-## Board overview
+![Current PCB top copper and silkscreen](docs/images/pcb-top.png)
 
-| Feature | Design |
+*Exported from the current KiCad design. Top copper and silkscreen only; this is a design view, not an assembled-board photograph.*
+
+[Schematic PDF](docs/schematic.pdf) · [Design decisions](docs/design-decisions.md) · [Validation evidence](docs/validation.md) · [Part inventory](docs/components.json)
+
+## What the board provides
+
+| Area | Implementation |
 |---|---|
-| Microcontroller | STMicroelectronics STM32F446ZET6, LQFP-144 |
+| MCU | STM32F446ZET6, Arm Cortex-M4, LQFP-144 |
 | PCB | 80 × 70 mm, four copper layers, nominal 1.6 mm |
-| Intended stackup | JLC04161H-7628; manufacturer confirmation pending |
-| Copper weight | Outer 1 oz, inner 0.5 oz |
-| USB | USB-C connector carrying USB 2.0 full-speed device signals |
-| Power | USB 5 V input, protection, TPS7A2533 3.3 V regulator and TPS22918 load switch |
+| Power | USB 5 V → protection → TPS7A2533 regulator → TPS22918 load switch → 3.3 V |
+| Connectivity | USB 2.0 full-speed device, SPI, I²C, UART, analog and GPIO headers |
 | Debug | External SWD probe through a custom five-pin header |
-| Interfaces | SPI, I²C, UART, analog and GPIO expansion headers |
-| External clock | 8 MHz crystal |
+| Clock | 8 MHz crystal |
+| User controls | Three pushbuttons and three indicator LEDs |
 
-The USB-C connector is intended for a USB device connection to a host. USB host operation and USB Power Delivery are outside the current scope. The TPS22918 is a load switch; it is not a programmable current limiter.
+USB host operation, USB Power Delivery and motor-power delivery are outside the current scope. The load switch controls rail startup; it is not a programmable current limiter.
 
-## Open the design
+```mermaid
+flowchart LR
+    USB[USB-C 5 V] --> Protection[Fuse and series diode]
+    Protection --> LDO[TPS7A2533 regulator]
+    LDO --> Switch[TPS22918 load switch]
+    Switch --> Rail[3.3 V MCU and headers]
+    Host[USB host data] <--> ESD[USBLC6 protection]
+    ESD <--> MCU[STM32F446]
+    Probe[External SWD probe] <--> MCU
+    MCU <--> IO[SPI / I2C / UART / GPIO]
+```
 
-Use KiCad 10 and open [`stm32.kicad_pro`](stm32.kicad_pro). The project includes:
+## Engineering work behind the layout
 
-- [`stm32.kicad_sch`](stm32.kicad_sch): schematic.
-- [`stm32.kicad_pcb`](stm32.kicad_pcb): board layout.
-- [`stm32.kicad_dru`](stm32.kicad_dru): project design rules.
-- `STM32_Custom.pretty`, `Library.pretty` and `STM32_Power.kicad_sym`: local footprint and symbol libraries.
-- `fp-lib-table` and `sym-lib-table`: project-relative library paths.
+The work covers the power path, MCU support circuits, custom footprints, placement, routing and assembly data. Three examples make the iteration process concrete:
 
-Standard symbols and footprints require the normal KiCad libraries. Exact manufacturer part numbers are stored in the component sourcing fields. Fabrication outputs and assembler-specific placement files will be published as a reviewed release once the manufacturing review is closed.
+- **Reset routing:** moving C22 reduced its MCU reset route from **19.45 mm to 13.41 mm**, about 31%. The [before/after comparison](docs/design-decisions.md#reset-layout-iteration) records the improvement and remaining compromise.
+- **Power margin:** a **250 mA total design budget** was screened against regulator dropout and dissipation. It remains conditional until load and thermal measurements establish the board's operating envelope.
+- **Assembly data:** the supplier preview exposed header and chip rotation mismatches. Corrections were put into the placement file, uploaded and checked after a full quote reload.
 
-## Design and review
+Peer feedback and AI-assisted checks supported these iterations. Bench measurements will be reported separately from calculations and software checks.
 
-Work on this board includes component selection, custom footprint checks, placement, decoupling, power distribution, signal routing, ground returns and preparation of assembly data. Peer feedback and AI-assisted reviews informed the iteration process. Bench results will be recorded separately from design calculations and software checks.
+## Evidence and next milestone
 
-The latest recorded checks on 16 October 2026 reported zero active ERC violations, zero DRC violations, zero unconnected items and zero schematic parity issues. Seven previously reviewed ERC exclusions remain. These results describe the configured checks, not measured electrical performance.
+Recorded checks on **16 October 2026** report **0 active ERC issues, 0 DRC violations, 0 unconnected items and 0 schematic parity issues**. Seven previously reviewed ERC exclusions remain. [Validation evidence](docs/validation.md) links the reports and records known layout limits; these checks do not establish measured hardware performance.
 
-The assembly preview revealed that assembler model rotations differed from KiCad footprint rotations. Corrections were incorporated into the placement file, reuploaded and checked after a fresh quote reload. KiCad footprint orientations were kept consistent with the schematic and PCB pad numbering.
+Next: confirm the exact **JLC04161H-7628** stackup, approve final assembly placement and bring up the prototype. Power rails and current draw come first, followed by SWD/reset, clock startup, GPIO and USB. Every physical test in the [test log](docs/test-log.md) is currently marked **not tested**. Firmware will be added when implementation begins.
 
-### Remaining work
+## Explore the design
 
-- Confirm the exact stackup with the fabricator; the saved quote currently specifies no stackup requirement.
-- Review final manufacturing placement files, including pin 1, diode polarity and USB connector seating.
-- Assemble and inspect the first prototypes.
-- Measure power rails, startup current and regulator temperature.
-- Establish SWD access, then test the clock, GPIO and USB with firmware.
+Open [`stm32.kicad_pro`](stm32.kicad_pro) in **KiCad 10**, with its standard libraries installed.
 
-The 250 mA total power budget used in the design review is conditional. It is not a measured continuous-output or thermal rating. Known layout compromises and bring-up dependencies are tracked in [`docs/validation.md`](docs/validation.md).
+| Files | Purpose |
+|---|---|
+| `stm32.kicad_sch`, `stm32.kicad_pcb` | Editable schematic and routed PCB |
+| `stm32.kicad_dru` | Project design rules |
+| `STM32_Custom.pretty`, `STM32_Power.kicad_sym` | Local footprints and symbols |
+| `fp-lib-table`, `sym-lib-table` | Project-relative library configuration |
+| `docs/` | Schematic export, design decisions, part inventory and validation evidence |
 
-## Firmware and results
+Local libraries are included. The empty `Library.pretty` directory is retained for the existing project library table. Final Gerbers and assembler placement files will accompany a reviewed manufacturing release after the open fabrication checks are closed. This repository is not a production release.
 
-Firmware is not included yet. A successful build, debug connection or USB enumeration will only be marked complete when supporting test evidence exists. The initial test log is in [`docs/test-log.md`](docs/test-log.md).
+## References and licensing
 
-## References
+[STM32F446 datasheet](https://www.st.com/resource/en/datasheet/stm32f446ze.pdf) · [TPS7A25 datasheet](https://www.ti.com/lit/ds/symlink/tps7a25.pdf) · [TPS22918 datasheet](https://www.ti.com/lit/ds/symlink/tps22918.pdf)
 
-- [ST STM32F446ZE documentation](https://www.st.com/resource/en/datasheet/stm32f446ze.pdf)
-- [TI TPS7A25 regulator datasheet](https://www.ti.com/lit/ds/symlink/tps7a25.pdf)
-- [TI TPS22918 load-switch datasheet](https://www.ti.com/lit/ds/symlink/tps22918.pdf)
-
-## License
-
-A hardware and documentation license has not yet been selected. This repository does not currently grant an explicit open-source license. Third-party library assets remain subject to their respective licenses.
+A project hardware/documentation license has not yet been selected. No explicit open-source license is currently granted. Third-party assets remain subject to their respective licenses.

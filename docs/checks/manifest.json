@@ -1,0 +1,35 @@
+{
+  "recorded_date": "2026-10-16",
+  "kicad_version": "10.0.6",
+  "source_files": {
+    "stm32.kicad_pcb": {
+      "sha256": "5cc806b02bc3182b0876a0b703921d13f776e1cc2b26adcc4a0b45b761941fc9",
+      "sha256_lf_normalized": "5cc806b02bc3182b0876a0b703921d13f776e1cc2b26adcc4a0b45b761941fc9"
+    },
+    "stm32.kicad_sch": {
+      "sha256": "12dd2cccd399e7690c4c241903aae1eacaaa34aefc46a21dfbeaa3411bf48dde",
+      "sha256_lf_normalized": "12dd2cccd399e7690c4c241903aae1eacaaa34aefc46a21dfbeaa3411bf48dde"
+    },
+    "stm32.kicad_pro": {
+      "sha256": "b0e1840f045167744d14fb254403b49d75a36b48d6d8ca8e7ab8315d27d4dd88",
+      "sha256_lf_normalized": "b0e1840f045167744d14fb254403b49d75a36b48d6d8ca8e7ab8315d27d4dd88"
+    },
+    "stm32.kicad_dru": {
+      "sha256": "7661dea0d9532497489bf89fce041468d03dcae2888bf4ebd15342b8784f876e",
+      "sha256_lf_normalized": "024cbfc2ede623bd6b63787e9f4c9df4934ea9cd495f88d7996fcf63d81ac710"
+    }
+  },
+  "checks": {
+    "drc_violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0,
+    "active_erc_issues": 0,
+    "historical_erc_exclusions": 7
+  },
+  "reports": {
+    "DRC.json": "2026-10-16T10:29:28",
+    "ERC.json": "2026-10-16T10:29:28",
+    "ERC-exclusions.json": "2026-10-15T15:55:48"
+  },
+  "limits": "Software checks and earlier exclusion review only; hardware untested; exact fabrication stackup and final assembly approval pending."
+}
