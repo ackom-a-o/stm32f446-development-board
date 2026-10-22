@@ -5448,7 +5448,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "CST"
+		(property "Manufacturer" "SHOU HAN"
 			(at 365.76 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -5459,7 +5459,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "CS-1109-1x5 (11.6)"
+		(property "Manufacturer Part Number" "SH-PZ254V-1x5P"
 			(at 365.76 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -5470,7 +5470,7 @@
 				)
 			)
 		)
-		(property "LCSC Part Number" "C5142872"
+		(property "LCSC Part Number" "C55629812"
 			(at 365.76 160.02 0)
 			(hide yes)
 			(show_name no)

@@ -1,0 +1,663 @@
+{
+  "pcb_sha256": "beb83eb71025a9166530fdac5d5b79a889589fd4d420678f45566d1164465aef",
+  "scope": "Straight track endpoint joins, same net and layer, endpoints rounded to 1 micrometre, angle within 1 degree of 90. Pad/via connections and branches classified separately. Does not simulate electrical behaviour or audit every polygon corner.",
+  "straight_segments": 1178,
+  "arcs": 0,
+  "category_counts": {
+    "pad_connection": 23,
+    "branch_junction": 2,
+    "via_connection": 4
+  },
+  "track_bends": [],
+  "critical_track_bends": [],
+  "all_joins": [
+    {
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "x_mm": 146.15,
+      "y_mm": 86.612,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.3535533905932738,
+            4.118897000411639
+          ],
+          "widths_mm": [
+            0.2,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "x_mm": 139.15,
+      "y_mm": 86.612,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            7.0,
+            2.1375
+          ],
+          "widths_mm": [
+            0.5,
+            0.2
+          ]
+        },
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            3.3375,
+            2.1375
+          ],
+          "widths_mm": [
+            0.5,
+            0.2
+          ]
+        },
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            2.1375,
+            1.3625
+          ],
+          "widths_mm": [
+            0.2,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "x_mm": 175.238,
+      "y_mm": 76.282,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            1.52,
+            1.155
+          ],
+          "widths_mm": [
+            0.2,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "x_mm": 121.15,
+      "y_mm": 68.662,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            8.92,
+            3.2875
+          ],
+          "widths_mm": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "x_mm": 135.05,
+      "y_mm": 93.162,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            3.464823227814083,
+            0.3535533905932738
+          ],
+          "widths_mm": [
+            0.5,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "x_mm": 134.75,
+      "y_mm": 104.512,
+      "category": "branch_junction",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.9,
+            0.0375
+          ],
+          "widths_mm": [
+            0.5,
+            0.2
+          ]
+        },
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.0375,
+            0.75
+          ],
+          "widths_mm": [
+            0.2,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "x_mm": 164.475,
+      "y_mm": 72.162,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            1.555,
+            5.4875
+          ],
+          "widths_mm": [
+            0.2,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "x_mm": 158.65,
+      "y_mm": 111.162,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.35,
+            0.9125
+          ],
+          "widths_mm": [
+            0.5,
+            0.2
+          ]
+        },
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.9125,
+            0.85
+          ],
+          "widths_mm": [
+            0.2,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "x_mm": 161.15,
+      "y_mm": 97.662,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            1.0875,
+            1.251905
+          ],
+          "widths_mm": [
+            0.5,
+            0.2
+          ]
+        },
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            1.1375,
+            1.251905
+          ],
+          "widths_mm": [
+            0.5,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "x_mm": 159.65,
+      "y_mm": 89.062,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            1.0875,
+            0.3875
+          ],
+          "widths_mm": [
+            0.2,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "x_mm": 162.03,
+      "y_mm": 76.162,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            1.2675,
+            5.6075
+          ],
+          "widths_mm": [
+            0.2,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "x_mm": 143.238,
+      "y_mm": 72.662,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            11.0375,
+            1.975
+          ],
+          "widths_mm": [
+            0.2,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "x_mm": 131.25,
+      "y_mm": 108.25,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.21213203435596428,
+            0.6540737725975565
+          ],
+          "widths_mm": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "net": "GND",
+      "layer": "F.Cu",
+      "x_mm": 163.2,
+      "y_mm": 99.0,
+      "category": "via_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.21213203435596428,
+            0.21213203435596428
+          ],
+          "widths_mm": [
+            0.2,
+            0.3
+          ]
+        }
+      ]
+    },
+    {
+      "net": "GND",
+      "layer": "F.Cu",
+      "x_mm": 159.15,
+      "y_mm": 119.162,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            1.75,
+            0.975
+          ],
+          "widths_mm": [
+            0.5,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "USB_VBUS_RAW",
+      "layer": "F.Cu",
+      "x_mm": 148.8,
+      "y_mm": 124.0,
+      "category": "via_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.07950284383592829,
+            0.9192388155425119
+          ],
+          "widths_mm": [
+            0.2,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "USB_VBUS_RAW",
+      "layer": "F.Cu",
+      "x_mm": 151.2,
+      "y_mm": 124.812,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            1.55,
+            0.3875
+          ],
+          "widths_mm": [
+            0.2,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "USB_VBUS_RAW",
+      "layer": "F.Cu",
+      "x_mm": 151.2,
+      "y_mm": 125.012,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.85,
+            0.1875
+          ],
+          "widths_mm": [
+            0.5,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "USB_VBUS_RAW",
+      "layer": "F.Cu",
+      "x_mm": 154.525,
+      "y_mm": 127.412,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.3875,
+            1.375
+          ],
+          "widths_mm": [
+            0.2,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "VREG_3V3",
+      "layer": "F.Cu",
+      "x_mm": 158.55,
+      "y_mm": 113.8,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.025,
+            0.15
+          ],
+          "widths_mm": [
+            0.2,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "VREG_3V3",
+      "layer": "F.Cu",
+      "x_mm": 162.2,
+      "y_mm": 119.662,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.21213203435596428,
+            0.8485281374238571
+          ],
+          "widths_mm": [
+            0.2,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "USB_VBUS",
+      "layer": "F.Cu",
+      "x_mm": 155.7,
+      "y_mm": 119.662,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.7071067811865476,
+            0.21213203435596428
+          ],
+          "widths_mm": [
+            0.2,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "NRST",
+      "layer": "B.Cu",
+      "x_mm": 131.2,
+      "y_mm": 97.6,
+      "category": "branch_junction",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.25,
+            17.2
+          ],
+          "widths_mm": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            6.6,
+            17.2
+          ],
+          "widths_mm": [
+            0.2,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "I\u00b2C1_SDA",
+      "layer": "F.Cu",
+      "x_mm": 141.0,
+      "y_mm": 87.4,
+      "category": "via_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.2,
+            0.4
+          ],
+          "widths_mm": [
+            0.2,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "BOOT1",
+      "layer": "F.Cu",
+      "x_mm": 145.0,
+      "y_mm": 111.4,
+      "category": "via_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.048573993226828704,
+            0.14142135623730953
+          ],
+          "widths_mm": [
+            0.2,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "USB_D_N",
+      "layer": "F.Cu",
+      "x_mm": 149.1,
+      "y_mm": 122.925,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.625,
+            0.575
+          ],
+          "widths_mm": [
+            0.290576,
+            0.290576
+          ]
+        }
+      ]
+    },
+    {
+      "net": "USB_D_N",
+      "layer": "F.Cu",
+      "x_mm": 149.1,
+      "y_mm": 125.2,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.5,
+            0.662499
+          ],
+          "widths_mm": [
+            0.290576,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "PD1",
+      "layer": "F.Cu",
+      "x_mm": 177.062,
+      "y_mm": 76.282,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            7.0875,
+            2.255
+          ],
+          "widths_mm": [
+            0.2,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "net": "I\u00b2C1_SCL",
+      "layer": "F.Cu",
+      "x_mm": 160.062,
+      "y_mm": 72.162,
+      "category": "pad_connection",
+      "joins": [
+        {
+          "angle_degrees": 90.0,
+          "lengths_mm": [
+            0.175,
+            1.175
+          ],
+          "widths_mm": [
+            0.2,
+            0.2
+          ]
+        }
+      ]
+    }
+  ],
+  "matches_previous_revision_2": false,
+  "matches_this_package_board": true
+}

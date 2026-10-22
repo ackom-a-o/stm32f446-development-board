@@ -4487,6 +4487,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 275.59 157.734)
+		(end 276.606 157.734)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "a4e14233-e57c-4d5e-804f-07346039a785")
+	)
 	(text "20-PIN EXPANSION HEADER"
 		(exclude_from_sim no)
 		(at 305 36 0)

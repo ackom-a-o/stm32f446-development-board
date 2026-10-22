@@ -1,0 +1,61 @@
+{
+  "pcb_sha256": "beb83eb71025a9166530fdac5d5b79a889589fd4d420678f45566d1164465aef",
+  "scope": "Centreline ground-projection samples at <=0.05 mm, excluding drilled pad/via neighbourhoods. Not an impedance solver or return-path certification.",
+  "nets": {
+    "USB_D_P": {
+      "sample_count": 1480,
+      "excluded_samples": 44,
+      "missing_ground_samples": [],
+      "total_track_length_by_width_mm": {
+        "F.Cu width 0.200000": 9.83563562571744,
+        "F.Cu width 0.290576": 61.50224710417301,
+        "F.Cu width 0.290000": 2.881185714224478,
+        "B.Cu width 0.200000": 1.4
+      },
+      "vias": 2
+    },
+    "USB_D_N": {
+      "sample_count": 1453,
+      "excluded_samples": 91,
+      "missing_ground_samples": [],
+      "total_track_length_by_width_mm": {
+        "F.Cu width 0.290576": 64.04088016164116,
+        "F.Cu width 0.200000": 5.620022625717439,
+        "F.Cu width 0.290000": 2.343982560623236,
+        "B.Cu width 0.200000": 4.407106781186547
+      },
+      "vias": 4
+    },
+    "SWDIO": {
+      "sample_count": 949,
+      "excluded_samples": 51,
+      "missing_ground_samples": [],
+      "total_track_length_by_width_mm": {
+        "F.Cu width 0.200000": 1.373241161390704,
+        "B.Cu width 0.200000": 48.44479506488132
+      },
+      "vias": 1
+    },
+    "SWCLK": {
+      "sample_count": 756,
+      "excluded_samples": 45,
+      "missing_ground_samples": [],
+      "total_track_length_by_width_mm": {
+        "F.Cu width 0.200000": 1.2414213562373095,
+        "B.Cu width 0.200000": 38.71460170504376
+      },
+      "vias": 1
+    },
+    "PG9": {
+      "sample_count": 679,
+      "excluded_samples": 89,
+      "missing_ground_samples": [],
+      "total_track_length_by_width_mm": {
+        "F.Cu width 0.200000": 32.13259018078045,
+        "B.Cu width 0.200000": 6.088540384964746,
+        "In2.Cu width 0.200000": 8.579898987322334
+      },
+      "vias": 5
+    }
+  }
+}

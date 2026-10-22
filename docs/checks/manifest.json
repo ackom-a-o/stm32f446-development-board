@@ -1,34 +1,34 @@
 {
-  "recorded_date": "2026-10-16",
+  "recorded_date": "2026-10-22",
   "kicad_version": "10.0.6",
   "source_files": {
-    "stm32.kicad_pcb": {
-      "sha256": "0a22175ec0964709dad9a2a1456cd7b7d57fe08a1c1af6545e939554702176a4",
-      "sha256_lf_normalized": "884f4cd2263403d3afd1d1c66bde4520508e4f7c83970602e4f1c2cce26f4dbf"
+    "fp-lib-table": {
+      "sha256": "26e342f1c13ce73bca27fffa23bb6765ddd867d4ca187de5ba76780f9a774fa9",
+      "sha256_lf_normalized": "2c03f9d9bf85e5d4e15cafc184aabac80c3f9c016c6d3111bf2d241c524e03bf"
     },
-    "stm32.kicad_sch": {
-      "sha256": "361a9a0c3d5bf9dd6a4c285fcd696e26cebdd9820adeadb146c64f460fff538f",
-      "sha256_lf_normalized": "b96e599c48219e51bb6d874a2dc518ad8f4d684576814ef4752d972cc6b2fe16"
-    },
-    "usb_debug_clock.kicad_sch": {
-      "sha256": "ae9ac75bbc45895f49e38270769938752ab7749383b1d0aeda08dcfa9c0828f2",
-      "sha256_lf_normalized": "4a5112c6f36247baba72d6c6bc2800175f269ef23bdf31fef4b7c98b3627f7d0"
+    "gpio_expansion.kicad_sch": {
+      "sha256": "16e8ee42f6a6db272acd1bfdb303f8520714818702c6789a0d46481ee1798ada",
+      "sha256_lf_normalized": "b58af163f197635345ad0d338b23f30d9a2cca042f7d23dbee4c281e11bc3a42"
     },
     "mcu_interfaces.kicad_sch": {
       "sha256": "c3dfcd8a2109d620ee7b49feb4a2ce7bc6b1736982e8e371e522d34808c26a48",
       "sha256_lf_normalized": "3a05ec66954add6eab6c0933bdbd43b10800439f7d607e26810f928cec2385f5"
     },
-    "gpio_expansion.kicad_sch": {
-      "sha256": "f30ef76e7bc32f3e7dc321d0ca2ee44bf786b70fc399f83c562d2662b5050108",
-      "sha256_lf_normalized": "b466cfbc5bda5171c401ef6e3a3405d5e3871325066964517a40dfea92648e74"
+    "stm32.kicad_dru": {
+      "sha256": "059fa883961a54ec1d22cdc3e0af2efc47491861b15b947228bcaf1dd9a588a4",
+      "sha256_lf_normalized": "f653caf6cd607e4c5ba09acb3a1fad9c1ca3d2578a80dc11572f51282a63bf4d"
+    },
+    "stm32.kicad_pcb": {
+      "sha256": "beb83eb71025a9166530fdac5d5b79a889589fd4d420678f45566d1164465aef",
+      "sha256_lf_normalized": "70dc3789b2642695daef71fa6595b3075c2c2beee39bf702f7aee77a50c13ae9"
     },
     "stm32.kicad_pro": {
-      "sha256": "1dedf11f3021b441ac3adeab921eb37ce9308c9e1a7738c246932fe14fd48ca0",
-      "sha256_lf_normalized": "1dedf11f3021b441ac3adeab921eb37ce9308c9e1a7738c246932fe14fd48ca0"
+      "sha256": "07f213872241c2e115989bbc426335483f3837167d9039691c2b5e30265edae4",
+      "sha256_lf_normalized": "07f213872241c2e115989bbc426335483f3837167d9039691c2b5e30265edae4"
     },
-    "stm32.kicad_dru": {
-      "sha256": "7661dea0d9532497489bf89fce041468d03dcae2888bf4ebd15342b8784f876e",
-      "sha256_lf_normalized": "024cbfc2ede623bd6b63787e9f4c9df4934ea9cd495f88d7996fcf63d81ac710"
+    "stm32.kicad_sch": {
+      "sha256": "3002d0e240a1a98061ff3f0b64c2924f5ade21342d7dd45c907f1a2bc99ecf3c",
+      "sha256_lf_normalized": "dfa11a3e3857357e798bb66ed3680dc277e1b73d8a84b4e5ab9b23b18b39d6ce"
     },
     "STM32_MCU.kicad_sym": {
       "sha256": "ca41fc5355bf9a0884302a8dcfc72119b504700b4077b59651a411281fc6397c",
@@ -42,9 +42,29 @@
       "sha256": "fe73a124b2222c8d8be182abef58acf8d16329ecce73c8632817750836838154",
       "sha256_lf_normalized": "7eb99adac45eb4c92075014c9d51de6ee1f803bbd8c02a0d362316e30f5d4621"
     },
-    "fp-lib-table": {
-      "sha256": "26e342f1c13ce73bca27fffa23bb6765ddd867d4ca187de5ba76780f9a774fa9",
-      "sha256_lf_normalized": "2c03f9d9bf85e5d4e15cafc184aabac80c3f9c016c6d3111bf2d241c524e03bf"
+    "usb_debug_clock.kicad_sch": {
+      "sha256": "0bd11dfd0c73e3a754bd11297427d1ae37aa7e91f48651e90da1f4d476db3bf8",
+      "sha256_lf_normalized": "78e6175907a3fef8fdf404d12ebb78062a3c9d24712191c5794d81bf3ba9d21e"
+    },
+    "Library.pretty/.gitkeep": {
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "sha256_lf_normalized": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "STM32_Custom.pretty/ESDA7P60-1U1M.kicad_mod": {
+      "sha256": "3bb7f83d337885222b35355da18e3b697d52c0c3e10225fe24831b5e06d2162d",
+      "sha256_lf_normalized": "6431b49601e857822ed3ffaef6590d31fc81dc7f202f80c72381e2005d83a362"
+    },
+    "STM32_Custom.pretty/TPS22918_DBV0006A.kicad_mod": {
+      "sha256": "0082655cae2d4313803b7f3a3b40ba58c8567a2986b1a317b2b65f54e619d391",
+      "sha256_lf_normalized": "0082655cae2d4313803b7f3a3b40ba58c8567a2986b1a317b2b65f54e619d391"
+    },
+    "STM32_Custom.pretty/TPS7A25_DRV0006A.kicad_mod": {
+      "sha256": "a546933d0e3dab5262247b944f6218bc2148ea7b0fda1381a81bf68948855066",
+      "sha256_lf_normalized": "34ff54a64ed7ffce844bce8338ee7fec5e7ce546f171a4f8db2ca3d69543526d"
+    },
+    "STM32_Custom.pretty/USB_C_Receptacle_USB4105_JLC.kicad_mod": {
+      "sha256": "35c6d8d3117fe92e19903915b7ca46bd068cc37749eb64f0c9cce6b99c31e9bd",
+      "sha256_lf_normalized": "8dd5b57527bb6fb08583430fb341dfb837e1f536f3e0ec98f3e6bdce0a7d170e"
     }
   },
   "checks": {
@@ -55,11 +75,18 @@
     "ignored_checks": 0,
     "current_ERC_exclusions": 0
   },
-  "reports": {
-    "DRC.json": "2026-10-16T20:57:10",
-    "ERC.json": "2026-10-16T20:57:09",
-    "ERC-exclusions.json": "Historical report from 2026-10-15; no current exclusions",
-    "schematic-refactor.json": "2026-10-16"
+  "report_sha256": {
+    "DRC.json": "ddb5c5b003aa9e1d3697236703e00b256a31735a50464b00fdd06d93d4421ec8",
+    "ERC.json": "e712eab3b4aa76cf62837e0263be26cc347fc2f144edd7e8e2cad5280891bdbd",
+    "ground-screen.json": "8445ec4438a5a6d151b1df135fbe092d2390856a22437a455113bf84ad8b24ce",
+    "bend-audit.json": "45c4245925d87c03810fc83a3f4a3066ec223df30971bf19a112e2608256844f",
+    "export-verification.json": "b8b9d16951d305de30a0ae9d776aead6eb08edd2638a5e26bf5eb1989dc356a4"
   },
-  "limits": "No physical layout improvement or hardware validation is claimed. Stackup confirmation and final assembly production-file approval remain pending."
+  "assembly": {
+    "fitted_references": 66,
+    "selected_part_types": 31,
+    "pcb_test_points": 3
+  },
+  "history": "schematic-refactor.json and ERC-exclusions.json describe earlier revisions, not current exclusions.",
+  "limits": "Untested prototype. Geometric screens do not certify impedance, signal integrity, thermal behaviour or hardware function. Final production-file approval remains separate."
 }

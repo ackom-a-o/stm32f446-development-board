@@ -7,5 +7,5 @@
 
 # Preserve nominal non-coplanar USB geometry beside U3 thermal pour.
 (rule "U3 ground pour to USB"
- (condition "A.Type == 'Zone' && A.Name == 'U3_GND_HEAT' && (B.NetName == '/USB_D_P' || B.NetName == '/USB_D_N')")
+ (condition "A.Type == 'Zone' && A.Name == 'U3_GND_HEAT' && (B.NetName == 'USB_D_P' || B.NetName == 'USB_D_N')")
  (constraint clearance (min 0.70mm)))

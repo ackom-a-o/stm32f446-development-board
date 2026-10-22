@@ -1,0 +1,16 @@
+{
+  "revision": "prototype-r3",
+  "date": "2026-10-22",
+  "status": "Unvalidated prototype; final production-file approval and bench testing remain open.",
+  "pcb_sha256": "beb83eb71025a9166530fdac5d5b79a889589fd4d420678f45566d1164465aef",
+  "files_sha256": {
+    "Gerbers-drills.zip": "09d93bd86157ce52d7c43d35a1ff956b95a9725435f3740dfef4480c970c419d",
+    "BOM.csv": "3841723cfca418162d156b423e2de56fc15e91674e50679d2096653b9323652d",
+    "CPL.csv": "37550bf75ca86193b00b2146ac66ae299e1dcea6021f11e687beefd57f5e02ef",
+    "exact-parts.json": "b3aa2efb693dc95aa51898b486e95bde1789555484a288456c538c2240ee81e1"
+  },
+  "source_manifest": "../../docs/checks/manifest.json",
+  "assembly_references": 66,
+  "part_types": 31,
+  "placement_convention": "Supplier-adjusted top-side centroids and rotations; verify for the intended assembler."
+}

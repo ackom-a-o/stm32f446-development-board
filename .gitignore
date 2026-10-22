@@ -1,6 +1,7 @@
 # Explicit initial publication list: experiments, quotes and backups stay local.
 /*
 !/.gitignore
+!/.gitattributes
 !/README.md
 !/stm32.kicad_pro
 !/stm32.kicad_sch
@@ -28,6 +29,8 @@
 !/docs/validation.md
 !/docs/test-log.md
 !/docs/design-decisions.md
+!/docs/engineering-review.md
+!/docs/bring-up.md
 !/docs/schematic.pdf
 !/docs/components.json
 !/docs/images/
@@ -35,6 +38,7 @@
 !/docs/images/pcb-top.png
 !/docs/images/schematic-interfaces.png
 !/docs/images/reset-layout-before-after.png
+!/docs/images/routing-corners.png
 !/docs/checks/
 /docs/checks/*
 !/docs/checks/DRC.json
@@ -42,6 +46,19 @@
 !/docs/checks/ERC-exclusions.json
 !/docs/checks/manifest.json
 !/docs/checks/schematic-refactor.json
+!/docs/checks/ground-screen.json
+!/docs/checks/bend-audit.json
+!/docs/checks/export-verification.json
+!/manufacturing/
+/manufacturing/*
+!/manufacturing/prototype-r3/
+/manufacturing/prototype-r3/*
+!/manufacturing/prototype-r3/README.md
+!/manufacturing/prototype-r3/Gerbers-drills.zip
+!/manufacturing/prototype-r3/BOM.csv
+!/manufacturing/prototype-r3/CPL.csv
+!/manufacturing/prototype-r3/exact-parts.json
+!/manufacturing/prototype-r3/manifest.json
 
 # KiCad personal state and recovery files.
 *.kicad_prl

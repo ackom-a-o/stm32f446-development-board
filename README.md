@@ -2,13 +2,13 @@
 
 A custom, USB-powered development board for sensor and control experiments, built around the **STM32F446ZET6**. This project follows an embedded hardware design from component selection and PCB layout through assembly preparation, firmware and bench validation.
 
-**Current milestone: first prototype preparation.** Hardware is not yet bench-tested. Exact fabrication stackup confirmation and final assembly production-file review remain open.
+**Current milestone: prototype fabrication preparation.** The corrected design, fabrication exports and assembly data are published below. Hardware is not yet bench-tested; final assembler production-file approval and physical validation remain open.
 
 ![Current PCB top copper and silkscreen](docs/images/pcb-top.png)
 
-*Exported from the current KiCad design. Top copper and silkscreen only; this is a design view, not an assembled-board photograph.*
+*Composed from the current fabrication Gerbers. Top copper and silkscreen only; drill holes are not depicted. This is a design view, not an assembled-board photograph.*
 
-[Schematic PDF](docs/schematic.pdf) · [Design decisions](docs/design-decisions.md) · [Validation evidence](docs/validation.md) · [Part inventory](docs/components.json)
+[Schematic PDF](docs/schematic.pdf) · [Engineering review](docs/engineering-review.md) · [Validation evidence](docs/validation.md) · [Manufacturing package](manufacturing/prototype-r3/) · [First power-up](docs/bring-up.md)
 
 ## What the board provides
 
@@ -44,19 +44,22 @@ CAN uses the MCU's existing CAN1 controller through J7 pin 3 (PD0/CAN1_RX) and p
 
 ## Engineering work behind the layout
 
-The work covers the power path, MCU support circuits, custom footprints, placement, routing and assembly data. Three examples make the iteration process concrete:
+The layout was reviewed against MCU and power-component datasheets, ST's USB hardware guidance and published signal-integrity advice. Checks covered electrical connectivity, local bypassing, ground return paths, USB geometry, reset/crystal placement, sourcing, footprint fit and assembly orientation. The [engineering review](docs/engineering-review.md) records the reasoning, corrections, references and remaining limits.
 
 - **Reset routing:** moving C22 reduced its MCU reset route from **19.45 mm to 13.41 mm**, about 31%. The [before/after comparison](docs/design-decisions.md#reset-layout-iteration) records the improvement and remaining compromise.
 - **Power margin:** a **250 mA total design budget** was screened against regulator dropout and dissipation. It remains conditional until load and thermal measurements establish the board's operating envelope.
+- **Local bypassing:** C29 adds a dedicated 1 µF capacitor at the TPS22918 input instead of relying only on the regulator's more distant output capacitor.
+- **Ground return:** a short PG9 inner-layer crossing was moved to the top layer to restore local ground beneath SWDIO. Ground stitching was retained; a geometric screen found no missing reference samples along the checked outer-layer routes.
+- **Routing corners:** the remaining ordinary PF6 right-angle bend was replaced with chamfered routing. The saved-board audit found zero ordinary track-to-track 90° bends within its stated scope. [Why prefer 45° bends?](docs/engineering-review.md#routing-corners-why-prefer-45-degrees) They reduce abrupt geometry changes; a right angle alone does not prove a signal will fail.
 - **Assembly data:** the supplier preview exposed header and chip rotation mismatches. Corrections were put into the placement file, uploaded and checked after a full quote reload.
 
 Peer feedback and AI-assisted checks supported these iterations. Bench measurements will be reported separately from calculations and software checks.
 
 ## Evidence and next milestone
 
-Recorded checks on **16 October 2026** report **0 ERC issues, 0 DRC violations, 0 unconnected items and 0 schematic parity issues**, with no ignored checks or current exclusions. [Validation evidence](docs/validation.md) links the reports and records known layout limits; these checks do not establish measured hardware performance.
+Recorded checks on **22 October 2026** report **0 ERC issues, 0 DRC violations, 0 unconnected items and 0 schematic parity issues**, with no ignored checks or current exclusions. The published inventory contains **66 assembly references**, plus three PCB test points. [Validation evidence](docs/validation.md) links the source hashes, reports and geometric checks; these do not establish measured hardware performance.
 
-Next: confirm the exact **JLC04161H-7628** stackup, approve final assembly placement and bring up the prototype. Power rails and current draw come first, followed by SWD/reset, clock startup, GPIO and USB. Every physical test in the [test log](docs/test-log.md) is currently marked **not tested**. Firmware will be added when implementation begins.
+The fabricator has confirmed the nominal **JLC04161H-7628** construction used as the design basis. Next: approve final production files and bring up the prototype. The [bring-up checklist](docs/bring-up.md) starts with inspection, shorts and power rails, then SWD/reset, clock startup, GPIO and USB. Every physical test in the [test log](docs/test-log.md) remains **not tested**. Firmware will be added when implementation begins.
 
 ## Explore the design
 
@@ -66,7 +69,7 @@ The [four-sheet schematic](docs/schematic.pdf) separates power, USB/debug/clock,
 
 ![MCU ports and peripheral interface schematic](docs/images/schematic-interfaces.png)
 
-*Sheet 3 of 4. The readability refactor preserved all 68 components and the pin membership of all 135 nets; [comparison evidence](docs/checks/schematic-refactor.json) also records unchanged PCB geometry.*
+*Sheet 3 of 4. The earlier readability refactor preserved its then-current 68 physical references and all 135 nets; [historical comparison evidence](docs/checks/schematic-refactor.json) records unchanged PCB geometry for that refactor. The subsequent C29 addition brings the current physical-reference count to 69.*
 
 | Files | Purpose |
 |---|---|
@@ -79,7 +82,7 @@ The [four-sheet schematic](docs/schematic.pdf) separates power, USB/debug/clock,
 | `fp-lib-table`, `sym-lib-table` | Project-relative library configuration |
 | `docs/` | Schematic export, design decisions, part inventory and validation evidence |
 
-Local libraries are included. The empty `Library.pretty` directory is retained for the existing project library table. Final Gerbers and assembler placement files will accompany a reviewed manufacturing release after the open fabrication checks are closed. This repository is not a production release.
+Local libraries are included. The empty `Library.pretty` directory is retained for the existing project library table. The [prototype-r3 package](manufacturing/prototype-r3/) contains Gerbers/drills, BOM, supplier-adjusted placement data and file hashes. It is an unvalidated prototype package, not a production-qualified release. Placement rotations are supplier-specific; another assembler must check its own conventions.
 
 ## References and licensing
 

@@ -1,0 +1,26 @@
+{
+  "PTH": {
+    "matched_holes_or_slots": 294,
+    "maximum_mm_difference": 0.0007071067811798752
+  },
+  "NPTH": {
+    "matched_holes_or_slots": 2,
+    "maximum_mm_difference": 0.0004999999999881766
+  },
+  "zip_matches_exported_files": true,
+  "board_matches_main_design": true,
+  "ground_planes": [
+    {
+      "layer": "In1.Cu",
+      "net": "GND",
+      "polygons": 1,
+      "area_mm2": 5067.471479566726
+    },
+    {
+      "layer": "In2.Cu",
+      "net": "GND",
+      "polygons": 1,
+      "area_mm2": 5054.215216039978
+    }
+  ]
+}

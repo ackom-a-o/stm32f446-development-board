@@ -16,7 +16,7 @@ The LDO avoids a switching power stage but turns voltage headroom into heat. A c
 
 These use `P = (Vin − 3.3 V) × I`; they are calculations, not measurements. U3 has local ground spreading copper and four thermal ground vias. Actual board-level thermal resistance is not established, so 250 mA remains a conditional total design budget. Load-step and temperature measurements will determine whether further copper or placement changes are needed.
 
-The switch timing capacitor controls rail turn-on. It does not enforce a current limit or negotiate USB current permission. The switch input shares U3's output capacitor through an approximately 11.43 mm supply path; this is a bypass-placement compromise to assess during bring-up.
+The switch timing capacitor controls rail turn-on. It does not enforce a current limit or negotiate USB current permission. The original switch-input bypass relied on U3's output capacitor through an approximately 11.43 mm supply path. The current revision adds C29, a dedicated 1 µF X7R 0603 capacitor beside U4's input, with a nearby GND via. C26 remains U3's output capacitor. Startup and transient measurements are still needed.
 
 Requirements were checked against the [TI TPS7A25](https://www.ti.com/lit/ds/symlink/tps7a25.pdf) and [TPS22918](https://www.ti.com/lit/ds/symlink/tps22918.pdf) documentation.
 
@@ -24,9 +24,9 @@ Requirements were checked against the [TI TPS7A25](https://www.ti.com/lit/ds/sym
 
 The intended stackup is JLC04161H-7628: nominal 1.6 mm, outer 1 oz and inner 0.5 oz copper. Both inner layers contain ground fills, with some low-speed signal crossovers on In2.Cu. They are not two wholly uninterrupted ground planes.
 
-Return-path review identified a local ground-reference gap beneath SWDIO. Interplane ground vias were added, but the gap remains. This is a mitigation, not measured signal-integrity closure. Initial debug should use short leads and a conservative clock. USB pad/via transitions and crystal startup also remain validation items.
+Return-path review identified a local ground-reference gap beneath SWDIO caused by a short PG9 inner-layer crossing. That crossing was moved to F.Cu and two obsolete PG9 transition vias removed; GND stitching was retained. The refilled ground now covers the checked SWDIO centreline outside excluded drilled neighbourhoods. See the [ground screen and its limits](engineering-review.md#ground-return-continuity-and-the-pg9-correction). Initial debug should still use short leads and a conservative clock. USB pad/via transitions and crystal startup remain validation items.
 
-The saved quote was found to specify no particular stackup. Exact manufacturer confirmation is required before checkout; matching nominal layer count and thickness alone does not close that requirement.
+The quote initially specified no particular stackup. The fabricator subsequently confirmed the nominal JLC04161H-7628 construction. Its [layer dimensions and USB calculation limits](engineering-review.md#stackup-and-usb-geometry) are recorded separately; confirmation of nominal construction is not a measured impedance certificate.
 
 ## Reset layout iteration
 
@@ -42,7 +42,7 @@ The nearest pad-centre separation is still approximately 7.73 mm. A tighter resu
 
 The first preview showed headers crossing their hole rows and several chip pin-1 markers at the wrong corners. In-editor rotations appeared correct, but reopening the quote showed those adjustments had reverted.
 
-The correction was moved into uploaded placement data: seven headers and U1/U2/U4 received supplier-specific rotation adjustments. The corrected files were processed, all **65 intended components** selected, and the quote fully reloaded. Each of those ten references was then visually checked again against holes or PCB pin-1 markings.
+The correction was moved into uploaded placement data: seven headers and U1/U2/U4 received supplier-specific rotation adjustments. The corrected files were processed and the quote fully reloaded. Each of those ten references was then visually checked again against holes or PCB pin-1 markings. After adding C29, the assembly inventory contains **66 intended fitted references**. J1 sourcing was updated to SHOU HAN SH-PZ254V-1x5P (C55629812) in both schematic and PCB.
 
 The lesson was to validate saved manufacturing data after reopening, not just the current preview. KiCad footprint orientations were not changed to compensate for the supplier convention. Final assembler production-file approval remains a separate step.
 
@@ -50,13 +50,13 @@ The lesson was to validate saved manufacturing data after reopening, not just th
 
 The original single-sheet schematic was reorganized into four functional sheets. The MCU symbol is split into supplies/control and ports A–G, while retaining the original package pin numbers and electrical pin types. Shared capacitor rails and connected divider, crystal and LED circuits make the signal flow easier to follow. Named signals carry connections between sheets.
 
-Presentation changes were verified against the preceding design: all 68 physical components retain their values, footprints, sourcing fields and original component UUIDs. All 135 nets contain the same reference-and-pin pairs. PCB synchronization changes only net names, schematic links and symbol-unit metadata; a structural comparison confirms identical physical geometry. Fresh ERC and DRC/parity checks pass with no issues, ignored checks or exclusions. The [comparison record](checks/schematic-refactor.json) records the scope of those checks.
+For that historical refactor, all then-current 68 physical components retained their values, footprints, sourcing fields and original UUIDs. All 135 nets contained the same reference-and-pin pairs, and the physical PCB geometry was unchanged. The [comparison record](checks/schematic-refactor.json) records that revision's scope. Later C29 and routing changes are covered by the current [validation evidence](validation.md), rather than by this historical geometry comparison.
 
 This improves reviewability; it does not add hardware test evidence or close the remaining fabrication and bring-up questions.
 
 ## Closing the remaining questions
 
-1. Confirm the exact stackup and final production placement files.
+1. Approve final fabrication and assembly production files against the corrected prototype package.
 2. Inspect the assembled board and perform unpowered checks.
 3. Record first-power voltages, current, startup and load-step behaviour.
 4. Establish SWD/reset operation, then verify clock, GPIO and USB with versioned firmware.

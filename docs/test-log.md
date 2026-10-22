@@ -2,6 +2,8 @@
 
 No hardware tests have been completed yet. Do not interpret the planned checks below as passing results.
 
+Use the [first power-up checklist](bring-up.md) for the intended sequence and the [validation page](validation.md) for completed software/design checks.
+
 Record the board revision, instruments, supply settings, firmware commit and ambient conditions with each test. Add photographs or measurements when available, and record failures as well as fixes.
 
 | Test | Purpose | Result | Evidence |

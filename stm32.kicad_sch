@@ -5101,6 +5101,12 @@
 		(uuid "e9f919e5-073e-4070-b74e-3834802edc56")
 	)
 	(junction
+		(at 238.76 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec0e2532-38e9-4236-b2b8-4d257ed64fec")
+	)
+	(junction
 		(at 274.32 223.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5237,6 +5243,16 @@
 			(type default)
 		)
 		(uuid "18c46857-d254-4bbf-8743-60ad365ee4b9")
+	)
+	(wire
+		(pts
+			(xy 238.76 53.34) (xy 238.76 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ac853a7-54f7-49dc-9a86-32b3739eeda5")
 	)
 	(wire
 		(pts
@@ -5670,6 +5686,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 55.88) (xy 236.22 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65ef2889-fd2e-4da9-9a9e-3044c6294343")
+	)
+	(wire
+		(pts
 			(xy 162.56 66.04) (xy 162.56 71.12)
 		)
 		(stroke
@@ -5727,6 +5753,16 @@
 			(type default)
 		)
 		(uuid "6cd2dd15-8d34-4a6c-9312-9fa15b6b2353")
+	)
+	(wire
+		(pts
+			(xy 217.17 55.88) (xy 217.17 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d555e30-47dd-4deb-aebd-990594e537f1")
 	)
 	(wire
 		(pts
@@ -6080,6 +6116,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 53.34) (xy 238.76 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4ff053d-ef19-4d11-a2d8-95f54476318e")
+	)
+	(wire
+		(pts
 			(xy 50.8 217.17) (xy 50.8 223.52)
 		)
 		(stroke
@@ -6097,6 +6143,16 @@
 			(type default)
 		)
 		(uuid "b9af5382-9306-4480-9912-53621189ba1c")
+	)
+	(wire
+		(pts
+			(xy 217.17 63.5) (xy 217.17 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb62ae12-6ce3-4dfe-b429-d97bcf00bffb")
 	)
 	(wire
 		(pts
@@ -6290,7 +6346,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 55.88) (xy 236.22 55.88)
+			(xy 241.3 55.88) (xy 238.76 55.88)
 		)
 		(stroke
 			(width 0)
@@ -9336,6 +9392,83 @@
 			(project "stm32"
 				(path "/20b47cb4-a94d-429e-be74-f8ca0a6c312b"
 					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 217.17 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4bdea1a7-d4b1-4ffb-bec4-10474b274a8c")
+		(property "Reference" "#PWR0134"
+			(at 217.17 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 217.17 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 217.17 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 217.17 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "20f8a576-f845-40a0-99f7-b3610f44c00a")
+		)
+		(instances
+			(project "stm32"
+				(path "/20b47cb4-a94d-429e-be74-f8ca0a6c312b"
+					(reference "#PWR0134")
 					(unit 1)
 				)
 			)
@@ -12506,6 +12639,121 @@
 			(project "stm32"
 				(path "/20b47cb4-a94d-429e-be74-f8ca0a6c312b"
 					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 217.17 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5cb99e0-1d03-485a-b62b-b04b89f76146")
+		(property "Reference" "C29"
+			(at 220.98 58.4199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1µF"
+			(at 220.98 60.9599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 218.1352 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 217.17 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 217.17 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "CL10B105KA8NNNC"
+			(at 217.17 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Number" "C29936"
+			(at 217.17 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "083e2eb6-2813-4265-90f5-884368a6056a")
+		)
+		(pin "1"
+			(uuid "1f1a3aac-1656-418e-89f2-a35faf4d949b")
+		)
+		(instances
+			(project "stm32"
+				(path "/20b47cb4-a94d-429e-be74-f8ca0a6c312b"
+					(reference "C29")
 					(unit 1)
 				)
 			)

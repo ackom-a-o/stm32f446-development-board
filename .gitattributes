@@ -1,0 +1,7 @@
+# Preserve manufacturing export bytes so published SHA-256 hashes remain useful.
+/manufacturing/prototype-r3/*.csv -text whitespace=cr-at-eol
+/manufacturing/prototype-r3/*.zip -text
+/manufacturing/prototype-r3/*.json -text whitespace=cr-at-eol
+/docs/checks/*.json -text whitespace=cr-at-eol
+/docs/schematic.pdf -text
+/docs/images/*.png -text

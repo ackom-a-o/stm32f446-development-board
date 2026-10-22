@@ -307,9 +307,9 @@
   },
   {
     "Reference": "J1",
-    "MPN": "CS-1109-1x5 (11.6)",
-    "LCSC": "C5142872",
-    "Manufacturer": "CST"
+    "MPN": "SH-PZ254V-1x5P",
+    "LCSC": "C55629812",
+    "Manufacturer": "SHOU HAN"
   },
   {
     "Reference": "C14",
@@ -387,6 +387,12 @@
     "Reference": "C16",
     "MPN": "CL21B105KBFNNNE",
     "LCSC": "C28323",
+    "Manufacturer": "Samsung Electro-Mechanics"
+  },
+  {
+    "Reference": "C29",
+    "MPN": "CL10B105KA8NNNC",
+    "LCSC": "C29936",
     "Manufacturer": "Samsung Electro-Mechanics"
   }
 ]
